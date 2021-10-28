@@ -1,0 +1,86 @@
+.ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #364d79;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 40px 36px;
+  text-decoration: none;
+}
+li .bttn {
+  top: 35px;
+  color: white;
+}
+li a:hover:not(.active) {
+  background-color: aliceblue;
+}
+.bttn:hover:not(.active) {
+  background-color: aliceblue;
+}
+
+.contentStyle {
+  height: 160px;
+  color: #111;
+  line-height: 160px;
+  background: #364d79;
+}
+
+.crd {
+  margin-left: "24%";
+}
+
+/* Footer */
+
+.footer-basic {
+  padding: 40px 0;
+  background-color: #364d79;
+  color: white;
+}
+.footer-basic .social {
+  padding-bottom: 25px;
+}
+.footer-basic .social > a {
+  font-size: 34px;
+  width: 70px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .socal > a {
+  font-size: 40px;
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 25px;
+  color: #aaa;
+  margin-bottom: 0;
+}

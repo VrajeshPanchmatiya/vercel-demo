@@ -1,0 +1,15 @@
+body {
+  background-color: cornflowerblue;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.dv {
+  margin: 100px 100px;
+}
+.header {
+  text-align: center;
+  padding: 30px;
+  font-size: 30px;
+}
