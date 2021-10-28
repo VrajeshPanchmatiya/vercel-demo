@@ -16,12 +16,12 @@ const Login = () => {
       history.push("/home");
     }
   };
-  const validateMessages = {
-    required: "${label} is Required",
-    types: {
-      email: "${label} is not a valid number",
-    },
-  };
+  // const validateMessages = {
+  //   required: "${label} is Required",
+  //   types: {
+  //     email: "${label} is not a valid number",
+  //   },
+  // };
   const RegisteredPage = () => {
     history.push("/SimpleForm");
   };
@@ -35,7 +35,7 @@ const Login = () => {
         colon={false}
         wrapperCol={{ span: 4 }}
         onFinish={onFinish}
-        validateMessages={validateMessages}
+        // validateMessages={validateMessages}
       >
         <Form.Item
           label={<label style={{ color: "white" }}>Email</label>}

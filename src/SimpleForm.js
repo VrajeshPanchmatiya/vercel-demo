@@ -18,13 +18,13 @@ const SimpleForm = (props) => {
     console.log(`selected ${value}`);
   };
   let history = useHistory();
-  const validateMessages = {
-    required: "${label} is required!",
-    types: {
-      email: "${label} is not a valid email!",
-      number: "${label} is not a valid number!",
-    },
-  };
+  // const validateMessages = {
+  //   required: "${label} is required!",
+  //   types: {
+  //     email: "${label} is not a valid email!",
+  //     number: "${label} is not a valid number!",
+  //   },
+  // };
   const onSearch = (val) => {
     console.log("search", val);
   };
@@ -56,7 +56,7 @@ const SimpleForm = (props) => {
           span: 4,
         }}
         onFinish={onFinish}
-        validateMessages={validateMessages}
+        // validateMessages={validateMessages}
       >
         <Form.Item
           label={<label style={{ color: "white" }}>First Name</label>}
