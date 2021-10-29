@@ -18,13 +18,7 @@ const SimpleForm = (props) => {
     console.log(`selected ${value}`);
   };
   let history = useHistory();
-  // const validateMessages = {
-  //   required: "${label} is required!",
-  //   types: {
-  //     email: "${label} is not a valid email!",
-  //     number: "${label} is not a valid number!",
-  //   },
-  // };
+
   const onSearch = (val) => {
     console.log("search", val);
   };
@@ -32,14 +26,7 @@ const SimpleForm = (props) => {
     console.log("Focus");
   };
 
-  const onBlur = () => {
-    console.log("Blur");
-  };
-  const onFinish = (values) => {
-    let email = values.Email;
-    let password = values.password;
-    localStorage.setItem("email", email);
-    localStorage.setItem("password", password);
+  const onFinish = () => {
     history.push("/");
   };
   return (
@@ -56,7 +43,6 @@ const SimpleForm = (props) => {
           span: 4,
         }}
         onFinish={onFinish}
-        // validateMessages={validateMessages}
       >
         <Form.Item
           label={<label style={{ color: "white" }}>First Name</label>}
@@ -141,7 +127,6 @@ const SimpleForm = (props) => {
             onChange={onChange}
             onSearch={onSearch}
             onFocus={onFocus}
-            onBlur={onBlur}
           >
             <Option value="Reading">Reading</Option>
             <Option value="Dancing">Dancing</Option>

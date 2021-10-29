@@ -17,8 +17,6 @@ const Home = () => {
   let history = useHistory();
   const { Meta } = Card;
   const logoutbtn = () => {
-    window.localStorage.removeItem("password");
-    window.localStorage.removeItem("email");
     history.push("/");
   };
   return (

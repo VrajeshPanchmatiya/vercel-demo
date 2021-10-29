@@ -5,23 +5,9 @@ import { useHistory } from "react-router-dom";
 const Login = () => {
   const { Title, Text } = Typography;
   let history = useHistory();
-  const onFinish = (values) => {
-    console.log("Success", values);
-    alert(values.Email);
-    // alert(localStorage.getItem("email"));
-    if (
-      window.localStorage.getItem("email") === values.Email &&
-      window.localStorage.getItem("password") === values.password
-    ) {
-      history.push("/home");
-    }
+  const onFinish = () => {
+    history.push("/home");
   };
-  // const validateMessages = {
-  //   required: "${label} is Required",
-  //   types: {
-  //     email: "${label} is not a valid number",
-  //   },
-  // };
   const RegisteredPage = () => {
     history.push("/SimpleForm");
   };
@@ -35,7 +21,6 @@ const Login = () => {
         colon={false}
         wrapperCol={{ span: 4 }}
         onFinish={onFinish}
-        // validateMessages={validateMessages}
       >
         <Form.Item
           label={<label style={{ color: "white" }}>Email</label>}
